@@ -30,11 +30,11 @@ CREATE TABLE `meta` (
 # Add schema type and schema version to the meta table
 INSERT INTO meta (meta_key, meta_value) VALUES
   ('schema_type', 'ontology'),
-  ('schema_version', '98');
+  ('schema_version', '99');
 
 # Patches included in this schema file
 INSERT INTO meta (meta_key, meta_value)
-  VALUES ('patch', 'patch_97_98_a.sql|schema_version');
+  VALUES ('patch', 'patch_98_99_a.sql|schema_version');
 
 CREATE TABLE `ontology` (
   `ontology_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
