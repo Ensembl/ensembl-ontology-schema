@@ -36,6 +36,9 @@ INSERT INTO meta (meta_key, meta_value) VALUES
 INSERT INTO meta (meta_key, meta_value)
   VALUES ('patch', 'patch_112_113_a.sql|schema_version');
 
+INSERT INTO meta (meta_key, meta_value)
+  VALUES ('patch', 'patch_112_113_b.sql|Ensure meta_value is not null');
+
 CREATE TABLE `ontology` (
   `ontology_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
